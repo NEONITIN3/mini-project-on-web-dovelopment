@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>bootstrap 4 responsive simple website -- fullyworld web tutorials</title>
+	<!-- main css file -->
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<!-- bootstrap cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<!-- font awesome cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+
+	<!-- home section  -->
+	<section class="container-fluid banner" id="home">
+		<div class="row">
+			<div class="nav2" id="nav2">
+				<i class="fa fa-close" onclick="navclose();"></i>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-md-12 navigation-bar navbar" id="navigation-bar">
+				<div class="logo navbar-brand">
+					<a href="index.html">
+						NEO NiTiN<span>.</span>
+					</a>
+				</div>
+				<div class="menu-text"  onclick="navopen();">
+					<p class="menu-heading">MENU</p>
+					<i class="fa fa-bars"></i>
+				</div>
+			</div>
+			<div class="col-md-12 d-flex info-banner">
+				<div class="col-md-10 offset-md-1 info-heading-text">
+					<h2>WELCOME TO STAY HEALTHY</h2>
+					<h1>STAY HEALTHY AND HAPPY</h1>
+					<div class="buttons d-flex">
+						<a href="#" class="btn">START HERE</a>
+						<a href="https://www.youtube.com/fullyworldwebtutorials" class="btn" target="_blank">SUBSCRIBE US</a>
+					</div>
+				</div>
+				<div class="col-md-1 social-icons">
+					<a href="https://www.facebook.com/123neonitin?hc_ref=ARQVFP2Dr7ts827Xlrrq7NDxI4GhAQV4fie2NrNWC-rynSmX7MHgX9fctVB7Y9sP-hM"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.instagram.com/neo_nitin/"><i class="fa fa-instagram"></i></a>
+					<a href="https://twitter.com/NeoNitin1"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/nitin-gaur1999/"><i class="fa fa-dribbble"></i></a>
+					<a href="https://www.youtube.com/watch?v=1SfQGCk3jFo"><i class="fa fa-whatsapp"></i></a>
+				</div>
+			</div>
+			<a href="#" class="col-md-2 offset-md-9 angle">
+				<i class="fa fa-angle-down"></i>
+				<h2>SCROLL DOWN</h2>
+			</a>
+		</div>
+	</section>
+
+	<!-- about section -->
+
+	<section class="container about" id="about">
+		<div class="light-box-intro" id="light-box-intro">
+			<i class="fa fa-close" onclick="lightboxout();"></i>
+			<iframe width="500" height="300" src="https://www.youtube.com/embed/01zJV7GMX8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="row">
+			<div class="col-md-12 main-about offset-md-1 d-flex">
+				<div class="col-md-6 about-us-info">
+					<h1 class="about-us-info-heading">
+						ABOUT US
+					</h1>
+					<p class="about-us-info-subheading">
+						STAY HEALTHY always help you to stay fit and happy no matter where are you no need to going gym 
+					</p>
+				</div>
+				<div class="col-md-6 about-us-intro">
+					<h2 class="about-us-intro-heading text-center">INTRO</h2>
+					<div class="image-intro-thumbnail offset-md-3 d-flex" onclick="lightboxappear();">
+						<img src="images/intro.jpg" class="image-responsive image-intro-about" />
+						<i class="fa fa-play"></i>
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- portfolio section -->
+	<section class="container portfolio" id="portfolio">
+		<div class="row">
+			<div class="col-md-12 portfolio-section">
+				<h1 class="text-center portfolio-heading">PORTFOLIO</h1>
+				<p class="text-center portfolio-subheading">
+					HERE ARE OUR SOME WORKS ..
+				</p>
+			</div>
+			<div class="col-md-11 offset-md-1 portfolio-videos d-flex">
+				<iframe width="300" height="200" src="https://www.youtube.com/embed/1SfQGCk3jFo"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="300" height="200" src="https://www.youtube.com/embed/oAlQoCUJmCA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="300" height="200" src="https://www.youtube.com/embed/wxzDhD4MUxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="300" height="200" src="https://www.youtube.com/embed/dEtWElwuq_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<a href="https://www.youtube.com/fullyworldwebtutorials" target="_blank" class="btn text-center load-btn offset-md-5">LOAD MORE</a>
+		</div>
+	</section>
+
+	<!-- contact us section -->
+	<section class="container-fluid contact" id="contact">
+		<div class="row">
+			<div class="col-md-12 contact-heading">
+				<h1 class="contact-heading-title text-center">CONTACT US</h1>
+				<p class="contact-heading-subtitle text-center">
+					In order to tell us what you think about this website and what changes you want to see  <br/>in our website, please fill the	 following form and contact. We will be obliged to listen from you.
+				</p>
+			</div>
+			<div class="col-md-6 contact-form offset-md-3">
+				<form id="form-contact">
+					<div class="form-group text-center">
+						<input type="text" name="name" placeholder="Enter Your Name" required="required" />
+						<input type="email" name="email" placeholder="Enter Your Email" required="required" />
+					</div>
+					<div class="form-group text-center subject">
+						<input type="text" name="subject" placeholder="Enter The Subject" required="required" />
+					</div>
+					<div class="form-group text-center">
+						<textarea name="comment" placeholder="Enter The comment" required="required" minlength="20"></textarea>
+					</div>
+					<div class="form-group text-center">
+						<input type="submit" name="submit-btn" value="SEND" form="form-contact" class="btn btn-primary" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer section here -->
+	<section class="container-fluid footer bg-primary" id="footer">
+		<a href="index.html" class="logo-footer text-center">Lorem.</a><br />
+		<a href="#home" class="btn btn-back text-center">BACK TO TOP</a>
+		<p class="footer-credits text-center">
+			Free to use . Proudly made by <a href="https://www.youtube.com/fullyworldwebtutorials">Fullyworld Web Tutorials</a>
+		</p>
+	</section>
+	<!-- script -->
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
